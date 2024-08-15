@@ -1,0 +1,112 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=8; IE=7; IE=9; IE=10; IE=EDGE" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="gradient"></div>
+    <div class="brick-wall"></div>
+    <div class="wood-floor"></div>
+    <div class="old-tv">
+        <div class="antenna"></div>
+        <main>
+            <div class="error-noise">
+                <div class="error-effect">
+                    <div class="old-tv-content"></div>
+                    <canvas id="canvas"></canvas>
+                    <!-- <img id="hiddenSVG" src="dvd-rom-logotype-svgrepo-com.svg" style="display:none;" alt="hidden svg"> -->
+
+                </div>
+            </div>
+        </main>
+        <div class="speaker"></div>
+        <div class="volume">
+            <input type="range" min="0" max="100" value="0" />
+        </div>
+        <nav class="channel">
+            <input type="range" min="0" max="100" value="0" />
+        </nav>
+        <nav class="power">
+            <button></button>
+        </nav>
+        <nav></nav>
+        <footer></footer>
+    </div>
+    
+    <div id="table-tv">
+        <div class="scene"
+        style="-webkit-transform:rotateX(-12deg) rotateY(0deg); -moz-transform:rotateX(-12deg) rotateY(0deg); -ms-transform:rotateX(-12deg) rotateY(0deg); transform:rotateX(-12deg) rotateY(0deg); ">
+        <div class="shape cuboid-1 cub-1">
+            <div class="face ft" style="box-shadow: inset 0 1px rgba(255,255,255,0.2)"></div>
+            <div class="face bk"></div>
+            <div class="face rt"></div>
+            <div class="face lt"></div>
+            <div class="face bm"></div>
+            <div class="face tp"
+            style="box-shadow: inset 0 100px 20px rgba(0,0,0,0.3), inset 0 300px rgba(0,0,0,0.3)"></div>
+        </div>
+        <div class="shape cuboid-3 cub-3">
+                <div class="face ft" style="box-shadow: inset 0 300px rgba(0,0,0,0.6), 10px 2px 10px rgba(0,0,0,0.8)">
+                </div>
+                <div class="face bk"></div>
+                <div class="face rt"></div>
+                <div class="face lt" style="box-shadow: inset 0 300px rgba(0,0,0,0.8)"></div>
+                <div class="face bm"></div>
+                <div class="face tp"></div>
+            </div>
+            <div class="shape cuboid-4 cub-4">
+                <div class="face ft" style="box-shadow: inset 0 20px 5px rgba(0,0,0,0.6), 5px 2px 8px rgba(0,0,0,0.4)">
+                </div>
+                <div class="face bk"></div>
+                <div class="face rt"></div>
+                <div class="face lt" style="box-shadow: inset 0 300px rgba(0,0,0,0.3)"></div>
+                <div class="face bm"></div>
+                <div class="face tp"></div>
+            </div>
+            <div class="shape cuboid-5 cub-5">
+                <div class="face ft" style="box-shadow: inset 0 300px rgba(0,0,0,0.6), -10px 2px 10px rgba(0,0,0,0.8)">
+                </div>
+                <div class="face bk"></div>
+                <div class="face rt" style="box-shadow: inset 0 300px rgba(0,0,0,0.8)"></div>
+                <div class="face lt"></div>
+                <div class="face bm"></div>
+                <div class="face tp"></div>
+            </div>
+            <div class="shape cuboid-6 cub-6">
+                <div class="face ft" style="box-shadow: inset 0 20px 5px rgba(0,0,0,0.6), -5px 2px 8px rgba(0,0,0,0.4)">
+                </div>
+                <div class="face bk"></div>
+                <div class="face rt" style="box-shadow: inset 0 300px rgba(0,0,0,0.3)"></div>
+                <div class="face lt"></div>
+                <div class="face bm"></div>
+                <div class="face tp"></div>
+            </div>
+            <div class="shape cuboid-2 cub-2">
+                <div class="face ft" style="box-shadow: inset 0 1px rgba(255,255,255,0.2)"></div>
+                <div class="face bk"></div>
+                <div class="face rt"></div>
+                <div class="face lt"></div>
+                <div class="face bm"></div>
+                <div class="face tp"
+                style="box-shadow: inset 0 50px 20px rgba(0,0,0,0.5), inset 0 150px rgba(0,0,0,0.4)"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <svg id="mySVG" height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 15.465 15.465" xml:space="preserve" fill="#000000">
+        <path style="fill:rgb(3, 1, 4);"
+             d="M7.4,8.959c-4.132,0-7.4,0.55-7.4,1.227c0,0.678,3.268,1.227,7.4,1.227s7.543-0.549,7.543-1.227 C14.944,9.508,11.533,8.959,7.4,8.959z M7.263,10.51c-0.957,0-1.733-0.237-1.733-0.53s0.776-0.53,1.733-0.53 s1.732,0.237,1.732,0.53S8.219,10.51,7.263,10.51z M13.319,4.052H9.701L7.769,6.291l-0.92-2.208H1.145L0.933,5.045h2.269 c0,0,1.037-0.136,1.071,0.694c0,1.438-2.376,1.316-2.376,1.316l0.444-1.5H0.869L0.194,7.988h2.668c0,0,2.821-0.25,2.821-2.218 c0,0,0.114-0.574,0.066-0.827L7.124,8.62l3.435-3.565h2.606c0,0,0.798,0.068,0.798,0.685c0,1.438-2.359,1.288-2.359,1.288 l0.365-1.472h-1.287L9.946,7.989h2.453c0,0,3.066-0.19,3.066-2.279C15.465,5.709,15.404,4.052,13.319,4.052z">
+         </path>
+     </svg>
+     -->
+    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
